@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Pathfinder</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1125px; height: 2436px; background: #231F20"></canvas>
+    <script src="Build/Pathfinder_11-12-2020.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/Pathfinder_11-12-2020.data.br",
+        frameworkUrl: "Build/Pathfinder_11-12-2020.framework.js.br",
+        codeUrl: "Build/Pathfinder_11-12-2020.wasm.br",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "Pathfinder",
+        productVersion: "1.0.1",
+      });
+    </script>
+  </body>
+</html>
